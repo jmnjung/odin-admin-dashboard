@@ -2,6 +2,7 @@
 
 :root {
   --primary-bg: #0f172a;
+  --secondary-bg: #f1f5f9;
   --sidebar-text: #e2e8f0;
 }
 
@@ -29,6 +30,26 @@ li {
 
 li:last-child {
   margin-bottom: 0;
+}
+
+input {
+  background-color: var(--secondary-bg);
+  border: none;
+  border-radius: 16px;
+  font-family: Poppins, sans-serif;
+  padding: 4px 10px;
+}
+
+button {
+  background-color: var(--primary-bg);
+  border: none;
+  border-radius: 24px;
+  color: var(--sidebar-text);
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 24px;
 }
 
 .sidebar {
@@ -69,4 +90,81 @@ li:last-child {
 
 .navigation img {
   height: 20px;
+}
+
+.header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px 32px;
+  z-index: 1;
+  display: grid;
+  grid-template: repeat(2, auto) / 3fr 1fr;
+  gap: 16px 32px;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-bar img {
+  height: 20px;
+}
+
+.user-info {
+  font-weight: 600;
+  padding-right: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  align-items: center;
+  gap: 24px;
+}
+
+.user-info img:first-child {
+  height: 20px;
+}
+
+.small-profile,
+.normal-profile {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.small-profile {
+  height: 40px;
+}
+
+.user-greeting {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.normal-profile {
+  height: 60px;
+}
+
+.greeting-text {
+  font-weight: 600;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.greeting {
+  font-size: 14px;
+}
+
+.user {
+  font-size: 24px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
 }
